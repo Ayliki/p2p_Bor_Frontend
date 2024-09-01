@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import cl from './styles.module.css';
+import profile1 from '../../assets/profile1.jpeg';
+import profile2 from '../../assets/profile2.jpeg';
 
 const ExchangeList = () => {
     const [exchangers, setExchangers] = useState([]);
@@ -19,7 +21,7 @@ const ExchangeList = () => {
                 id: 1,
                 name: 'Ilya Belov',
                 amount: '500 USD',
-                profilePicture: 'src/assets/profile1.jpeg',
+                profilePicture: profile1,
                 telegramHandle: 'Ayliki',
                 rating: 4.5,
                 details: 'Ilya Belov has been exchanging currency for over 5 years and has a great reputation.',
@@ -28,7 +30,7 @@ const ExchangeList = () => {
                 id: 2,
                 name: 'Ivan Ivanov',
                 amount: '300 USD',
-                profilePicture: 'src/assets/profile2.jpeg',
+                profilePicture: profile2,
                 telegramHandle: 'IvanovI',
                 rating: 4.7,
                 details: 'Ivan Ivanov is known for quick and reliable exchanges.',

@@ -1,0 +1,23 @@
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+.dropdownLabel {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #333; 
+}
+
+.dropdownLabel:hover {
+  background-color: #e0e0e0;
+} 
+
+.dropdownLabel:active {
+  background-color: #d0d0d0;
+}

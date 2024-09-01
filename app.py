@@ -1,14 +1,18 @@
 from aiogram import Bot, Dispatcer, executor, types
 from aiogram.types.web_app_info import WebAppInfo
+from dotenv import load_dotenv
+import os
 
-bot = BOT('7346780970:AAFtfT_zSenIjl514NCKtz9984N4q0pbz3U')
+load_dotenv() 
+
+bot = os.getenv('TELEGRAM_BOT_KEY')
 
 dp = Dispatcer(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message : types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Open Web Page', web_app = WebAppInfo('')))
+    markup.add(types.KeyboardButton('Open Web Page', web_app = WebAppInfo('https://p2p-bor-frontend.vercel.app/')))
     await message.answer("Hey, my friend!", reply_markup = markup)
 
 if __name__ == '__main__':

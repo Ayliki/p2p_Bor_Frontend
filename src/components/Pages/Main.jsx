@@ -3,6 +3,7 @@ import Dropdown from '../Dropdown/Dropdown'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header/Header';
+import swap_icon from '../../assets/swap_icon.png'
 
 
 const Main = () =>{
@@ -44,7 +45,7 @@ const Main = () =>{
                 currencies={currencies}
             />
             <img 
-                src="src/assets/swap_icon.png" 
+                src={swap_icon} 
                 alt="swap_icon" 
                 className={cl.icon}
                 onClick={swapCurrencies}

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from "./components/Pages/Main";
 import ExchangeList from './components/ExchangeList/ExchangeList';
-import { TG, request } from './components/Api/requests';
 import { useEffect, useState } from 'react';
 
 

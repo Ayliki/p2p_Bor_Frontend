@@ -15,8 +15,10 @@
 }
 
 .convertBtn {
-  background-color: #007bff;
-  color: #ffffff; 
+  /* background-color: #007bff; */
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  /* color: #ffffff;  */
   border: none;
   border-radius: 5px;
   width: 150px;

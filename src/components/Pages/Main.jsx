@@ -8,8 +8,8 @@ import swap_icon from '../../assets/swap_icon.png'
 
 const Main = () =>{
 
-    const [selectedCurrency1, setSelectedCurrency1] = useState('Select an Option');
-    const [selectedCurrency2, setSelectedCurrency2] = useState('Select an Option');
+    const [selectedCurrency1, setSelectedCurrency1] = useState('Select an Currency');
+    const [selectedCurrency2, setSelectedCurrency2] = useState('Select a Currency');
     const [currencies, setCurrencies] = useState(["USD", "EUR", "RUB", "CAD"]);
     const [amount, setAmount] = useState('')
 
@@ -20,7 +20,7 @@ const Main = () =>{
         setSelectedCurrency2(selectedCurrency1)
     }
     
-    const handleConvertClick = () => {
+    const handleExchangeClick = () => {
         if (amount){
             navigate('/exchange-list', { state: { amount, currency1: selectedCurrency1, currency2: selectedCurrency2 } });
         }
@@ -57,9 +57,9 @@ const Main = () =>{
             />
             <button 
                 className={cl.convertBtn}
-                onClick={handleConvertClick}
+                onClick={handleExchangeClick}
             >
-                Convert
+                Exchange
             </button>
         </div>
     )

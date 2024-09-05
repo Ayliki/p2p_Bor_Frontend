@@ -8,5 +8,7 @@
 }
 
 body {
-  background-color: #f4f7f9;
+  /* background-color: #f4f7f9; */
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
 }
